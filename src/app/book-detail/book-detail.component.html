@@ -3,14 +3,18 @@
   <dl class="list">
     <dt>ISBN</dt>
     <dd>{{ book.isbn }}</dd>
-    <dt>Author</dt>
+    <dt>Title</dt>
+    <!-- <dd>{{ book.title }}</dd>
+    <dt>Author</dt> -->
     <dd>{{ book.author }}</dd>
+    <dt>Published Year</dt>
+    <dd>{{ book.published_year }}</dd>
     <dt>Publisher</dt>
     <dd>{{ book.publisher }}</dd>
-    <dt>Price</dt>
-    <dd>{{ book.price }}</dd>
+    <!-- <dt>Price</dt>
+    <dd>{{ book.price }}</dd> -->
     <dt>Update Date</dt>
-    <dd>{{ book.updated_at }}</dd>
+    <dd>{{ book.updated_date | date:'short' }}</dd>
   </dl>
 </div>
 <div class="row">
